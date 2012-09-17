@@ -1,0 +1,9 @@
+---
+layout: project
+category: projects
+---
+#Yahoo! Toolbar#
+
+The Yahoo! Toolbar is fairly well known throughout most of the world, shipping in over 30 countries. I developed features and infrastructure for Yahoo! Toolbar for Internet Explorer from version 6 through version 8. I developed client features, such as RSS feed buttons, early prototypes of tabbed browsing support for IE5 and IE6 (which lacked tabs), and the Welcome Page and Event Tips contextual popups. I developed Accessibility support for the Toolbar client using Microsoft Active Accessibility. For Toolbar 8, I implemented major client pieces of the My Notifications feature, which provides always present visibility of activities from the Yahoo! Updates social network. In addition these client features, I also developed server-side services for use by the Toolbar in PHP, and editing tools to create new buttons and other client features using the Toolbar's dynamic button infrastructure. I did extensive work on both client and server side components to support a shift from native codepage based text data to using UTF-8 systemwide, which supports the active international user base.
+
+[Toolbar Homepage (view in IE to see the IE specific flow)](http://toolbar.yahoo.com)

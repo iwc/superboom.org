@@ -1,0 +1,15 @@
+---
+layout: default
+title: Irwin Coleman - Projects
+---
+
+<h1>Projects</h1>
+Here are some selected projects that I have worked on:
+
+{% for post in site.posts %}
+ {% if post.categories contains 'projects' %}
+ <div class="well well-large">
+ 	{{ post.content }}
+ </div>
+ {% endif %}
+{% endfor %}

@@ -1,0 +1,8 @@
+---
+layout: project
+category: projects
+---
+
+# Incanta Music #
+
+Incanta Music was a Windows client application that enabled users to listen to a personalized internet radio station. Incanta Music allowed users to rank their preference of various music generes, artists, and even individual songs to create a personally relevant music experience. Based on your rankings, the Incanta Music server would select tracks you like, plus tracks you had not heard before, but were likes of other users with similar tastes. The functionality was not unlike services like Pandora or Last.fm, but Incanta Music was available to Broadband ISP customers in 1999. My primary focus on this project was the client user interface, sending user ranking feedback up to the servers via our middleware library, and managing the MPEG audio data on the client side that our middleware delivered.
