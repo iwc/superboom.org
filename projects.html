@@ -1,15 +1,129 @@
----
-layout: default
-title: Irwin Coleman - Projects
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Irwin Coleman | Projects</title>
+<!--    <style type="text/css" media="all">
+      @import url(css/lightbox.css);
+      @import url(css/styles.css);
 
-<h1>Projects</h1>
-Here are some selected projects that I have worked on:
+    </style>
+-->
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".lightbox").lightbox({fitToScreen: true});
+        });      
+    </script>
 
-{% for post in site.posts %}
- {% if post.categories contains 'projects' %}
- <div class="well well-large">
- 	{{ post.content }}
- </div>
- {% endif %}
-{% endfor %}
+  </head>
+  <body id="projects">
+    <!-- page wrapper -->
+    <div id="wrapper">
+      <!-- Top banner for the page -->
+      <div id="banner">
+        <h1>Irwin Coleman</h1>
+      </div>
+
+      <!-- page navigation bar -->
+      <div id="navbar">
+        <ul class="nav">
+          <li><a href="index.html" id="biolink">Bio</a></li>
+          <li><a href="projects.html" id="projectslink">Projects</a></li>
+          <li><a href="resume.html" id="resumelink">Resume</a></li>
+          <li><a href="contact.html" id="contactlink">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- main content -->
+      <div id="contentwrapper">
+      <div id="content">
+        <h1>Projects</h1>
+        <p>Here are some selected projects that I have worked on:</p>
+        <div class="projectbox">
+            <h3>Yahoo Search In Apps SDK</h3>
+            <p>The Yahoo Search In Apps SDK enables developers to embed Yahoo Search into their applications. With a single tap, users can access the power of Yahoo search in app, and share results seamlessly in the application experience. I was Tech Lead for the mobile web content for presenting search results. The web components used <a href="https://facebook.github.io/react/">React</a> and the <a href="https://facebook.github.io/flux/">Flux</a> data flow architecture. The resulting web stack was then evaluated for the next generation front end architecture for Yahoo Search.</p>
+            <a href="https://developer.yahoo.com/search-sdk/">Yahoo Search In Apps Developer Site</a>
+        </div>
+        <div class="projectbox">
+            <h3>Samsung Multiscreen SDK</h3>
+            <p>The Samsung Multiscreen SDK enables developers to create Smart TV and mobile applications that communicate and offer a shared interactive experience. Mobile applications using the SDK can easily discover and connect to Samsung Smart TVs. All connected devices and coordinate and communicate for multi screen experiences. I developed the initial version of the Android SDK, as well as several pieces of service discovery infrastructure.</p>
+            <a href="https://www.samsungdforum.com/Features/MultiScreen">Multiscreen SDK Developer Forum</a>
+        </div>
+        <div class="projectbox">
+          <h3>ClearUX Framework</h3>
+          <p>The ClearUX Framework facilitates rapid web application development. Server side handlers process declarative UI specs and generate a web UI based on the <a href="http://www.extjs.com/">Ext.js</a> Javascript library. ClearUX is intended for front ends for Infor's Enterprise applications, to provide a consistent user experience across applications. Most widgets are focused on presentation of large datasets in a clean, simple design.</p>
+          <div class="projectimages">
+            <a href="images/cux-hierarchy-detail.jpg" title="Hierarchy Detail UI Pattern" class="lightbox" rel="cux"><img src="images/cux-hierarchy-detail-teaser.jpg"  alt="Hierarchy Detail UI Pattern"></a>
+            <a href="images/cux-form-validation.jpg" title="Form Validation" class="lightbox" rel="cux"><img src="images/cux-form-validation-teaser.jpg" alt="Form Validation"></a>
+            <a href="images/cux-pattern-gridedit.jpg" title="In-Place Grid Editing" class="lightbox" rel="cux"><img src="images/cux-pattern-gridedit-teaser.jpg"  alt="In-Place Grid Editing"></a>
+            <a href="images/cux-filtering-grid-filtered.jpg" title="Grid Filtering" class="lightbox" rel="cux"><img src="images/cux-filtering-grid-filtered-teaser.jpg"  alt="Grid Filtering"></a>
+            <a href="images/cux-popup-form.jpg" title="Floating Windows and Forms" class="lightbox" rel="cux"><img src="images/cux-popup-form-teaser.jpg"  alt="Floating Windows and Forms"></a>
+            </div>
+            </div>
+        <div class="projectbox">
+          <h3>DulyNoted</h3>
+          <p>DulyNoted is my first foray into iPhone application development. I was really displeased with using the built in Notes application for tracking to-do lists. DulyNoted is a lightweight to-do list/note application that allows you to add/delete/reorder notes on the fly and add details for completing your goal. You can also take photos and attach them to notes, or attach an already existing image from your camera roll. <p><a href="dulynoted.html">Local Support Page</a></p></p>
+          <div class="projectimages">
+            <a href="images/dn_taptoadd.jpg" title="DulyNoted Tap to Add" class="lightbox" rel="dn"><img src="images/dn_taptoadd_teaser.jpg"  alt="DulyNoted Tap to Add" /></a>
+            <a href="images/dn_notelist.jpg" title="DulyNoted Note List" class="lightbox" rel="dn"><img src="images/dn_notelist_teaser.jpg"  alt="DulyNoted Note List" /></a>
+            <a href="images/dn_notedetails.jpg" title="DulyNoted Note Details" class="lightbox" rel="dn"><img src="images/dn_notedetails_teaser.jpg"  alt="DulyNoted Note Details" /></a>
+            <a href="images/dn_viewimage.jpg" title="DulyNoted View Image" class="lightbox" rel="dn"><img src="images/dn_viewimage_teaser.jpg"  alt="DulyNoted View Image" /></a>
+            <a href="images/dn_editimagelabel.jpg" title="DulyNoted Edit Image Label" class="lightbox" rel="dn"><img src="images/dn_editimagelabel_teaser.jpg"  alt="DulyNoted Edit Image Label" /></a>
+          </div>
+        </div>
+        <div class="projectbox">
+          <h3>Yahoo! Toolbar</h3>
+          <p>The Yahoo! Toolbar is fairly well known throughout most of the world, shipping in over 30 countries. I developed features and infrastructure for Yahoo! Toolbar for Internet Explorer from version 6 through version 8. I developed client features, such as RSS feed buttons, early prototypes of tabbed browsing support for IE5 and IE6 (which lacked tabs), and the Welcome Page and Event Tips contextual popups. I developed Accessibility support for the Toolbar client using Microsoft Active Accessibility. For Toolbar 8, I implemented major client pieces of the My Notifications feature, which provides always present visibility of activities from the Yahoo! Updates social network. In addition these client features, I also developed server-side services for use by the Toolbar in PHP, and editing tools to create new buttons and other client features using the Toolbar's dynamic button infrastructure. I did extensive work on both client and server side components to support a shift from native codepage based text data to using UTF-8 systemwide, which supports the active international user base. <p><a href="http://toolbar.yahoo.com">Toolbar Homepage (view in IE to see the IE specific flow)</a></p></p>
+          <div class="projectimages">
+            <a href="images/tb7-main.jpg" title="The Main Yahoo! Toolbar Area" class="lightbox" rel="ytb"><img src="images/tb7-1-teaser.jpg" alt="Yahoo! Toolbar" /></a>
+            <a href="images/tb7-rss.jpg" title="Yahoo! Toolbar RSS Buttons" class="lightbox" rel="ytb"><img src="images/tb7-rss-teaser.jpg" alt="Yahoo! Toolbar RSS Buttons" /></a>
+            <a href="images/tb7-wp.jpg" title="The Yahoo! Toolbar Welcome Page" class="lightbox" rel="ytb"><img src="images/tb7-wp-teaser.jpg" alt="Yahoo! Toolbar Welcome Page" /></a>
+            <a href="images/tb7-eventtip.jpg" title="An Example of the Yahoo! Toolbar Event Tips" class="lightbox" rel="ytb"><img src="images/tb7-eventtip-teaser.jpg" alt="Yahoo! Toolbar Event Tips" /></a>
+            <a href="images/tb8-mynotifications.jpg" title="The Yahoo! Toolbar 8 (Beta) My Notifications Control" class="lightbox" rel="ytb"><img src="images/tb8-mynotifications-teaser.jpg" alt="Yahoo! Toolbar My Notifications" width="150" /></a>
+          </div>
+        </div>
+        <div class="projectbox">
+          <h3>ESPN Screening Support System (Triple S)</h3>
+          <p>The ESPN Screening Support System was a custom application extension to the BBC Colledia digital video broadcast package. The Screening Support System provided an interface to production assistants (screeners) to view and rapidly tag video clips with metadata tied to specific timecodes in the video. Screeners could tag the ins and outs of interesting video segments, tag and label those segments with relevant descriptions, then export an Edit Decision List to a full Colledia digital video editing suite to refine the rough cuts into full video packages. Production assistants could use the Triple S system to build tease/bump segments around commercial breaks, or build clips for news stories for broadcast on ESPN SportsCenter. My work included reviewing UI design requirements with our requirements gathering staff, the chief UX designer, and ESPN executives. I led a small development team to implement the Triple S user interface. I prototyped several core components, such as a docking window framework. I worked with the middleware team to establish UI integration with the rest of the Colledia backend. The Triple S UI development was implemented with COM, ATL and WTL.
+            <p><a href="http://findarticles.com/p/articles/mi_m0HNN/is_3_19/ai_114928319">BNET coverage of the ESPN Project</a></p>
+            <div class="projectimages">
+              <a href="images/hs.jpg" title="ESPN Screening Support System" class="lightbox" rel="hs"><img src="images/hs_teaser.jpg" alt="ESPN Screening Support System" /></a>
+            </div>
+        </div>
+        <div class="projectbox">
+          <h3>Bellsouth Instant Messenger / AT&amp;T Instant Messenger</h3>
+            <p>The Bellsouth Messenger was part of a suite of internet applications for Bellsouth.net ISP customers. The Bellsouth Messenger provided a integrated Instant Messaging solution that used Jabber/XMPP for its internal IM protocol. In addition to Jabber support, it included client side protocol support for MSN, Yahoo, and AOL IM networks. The Bellsouth Messenger application also integrated with an Address Book and Email client. The entire suite was architected as a collection of reusable COM components. My work included general UI development, development of COM infrastructure, implementation of the MSN Messenger support, and implementation of major parts of the chat window. The chat window used the IE webbrowser control for display and editing of chat messages with rich formatting. In a later phase of the project, I did early work on some of the UI support to provide the Photo sharing feature. <p><a href="http://support.att.net/bellsouth/asp/contentview.asp?isbrowse=true&sprt_cid=30996319-e44a-48a2-9426-fb996d1ec530">AT&amp;T Messenger FAQ page</a></p></p>
+          <div class="projectimages">
+            <a href="images/bsm_contactlist.jpg" title="Bellsouth Messenger Contact List" class="lightbox" rel="bsm"><img src="images/bsm_contactlist_teaser.jpg" alt="Bellsouth Instant Messenger Contact List" /></a>
+            <a href="images/bsm_chat_window.jpg" title="Bellsouth Messenger Chat Window" class="lightbox" rel="bsm"><img src="images/bsm_chatwindow_teaser.jpg" alt="Bellsouth Instant Messenger Chat Window" /></a>
+            <a href="images/bsm_file_xfer.jpg" title="Bellsouth Messenger File Transfer Window" class="lightbox" rel="bsm"><img src="images/bsm_filexfer_teaser.jpg" alt="Bellsouth Instant Messenger" /></a>
+          </div>
+        </div>
+        <div class="projectbox">
+          <h3>Incanta Music</h3>
+            <p>Incanta Music was a Windows client application that enabled users to listen to a personalized internet radio station. Incanta Music allowed users to rank their preference of various music generes, artists, and even individual songs to create a personally relevant music experience. Based on your rankings, the Incanta Music server would select tracks you like, plus tracks you had not heard before, but were likes of other users with similar tastes. The functionality was not unlike services like Pandora or Last.fm, but Incanta Music was available to Broadband ISP customers in 1999. My primary focus on this project was the client user interface, sending user ranking feedback up to the servers via our middleware library, Aand managing the MPEG audio data on the client side that our middleware delivered.</p>
+          <div class="projimages">
+            <a href="images/im2.gif" title="The Incanta Music 2 Client" class="lightbox" rel="incamusic"><img src="images/im2-teaser.jpg" alt="Incanta Music 2" /></a>
+            <a href="images/im3.gif" title="The Incanta Music 3 Client" class="lightbox" rel="incamusic"><img src="images/im3-teaser.jpg" alt="Incanta Music 3" /></a>
+          </div>
+        </div>
+        <div class="projectbox">
+          <h3>Incanta Service Navigator</h3>
+            <p>The Service Navigator was an Internet Explorer Tool Band (a sidebar) for use as a launchpad for ISP customers that would be constantly available regardless of the user's browser location. The contents of the Service Navigator sidebar included a fully functional ActiveX version of the Incanta Music playback engine. The ActiveX player was completely driven via Javascript in the HTML content of the sidebar. My work included the initial prototyping of the sidebar addon functionality, and development of the ActiveX wrapper and scripting interface.</p>
+          <div class="projectimages">
+            <a href="images/servicenav.jpg" title="The Incanta Service Navigator, Customized for RCN" class="lightbox"><img src="images/servicenav-teaser.jpg" alt="Incanta Service Navigator" /></a>
+        </div>
+      <br />
+      <br />
+      </div>
+      </div>
+      <div id="footer">
+        <p><a href="mailto:iwc@superboom.org">email: Irwin Coleman</a></p>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Irwin Coleman">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win98; I) [Netscape]">
+   <title>Summary: The Context Toolkit: Aiding the Development of Context-Enabled Applications</title>
+</head>
+<body text="#FFFFFF" bgcolor="#000000" link="#FFFF00" vlink="#C0C0C0" alink="#C0FFC0">
+
+<h1>
+Summary: <u>The Context Toolkit: Aiding the Development of Context-Enabled
+Applications</u></h1>
+Authors: <i>Daniel Salber, Anind K. Dey, Gregory D. Abowd</i>
+<h3>
+Overview</h3>
+This paper discusses the design issues and mechanisms necessary to support
+rapid ubiquitous application development. The Context Toolkit described
+in this paper presents several software abstractions to provide a layer
+on top of various sensor equipment and expose higher level events to ubiquitous
+application designers. Each unit of the toolkit, referred to as "widgets,"
+provides access to some form of context awareness.
+<p>One of the example "context widgets" include <i>IdentityPresence</i>,
+which takes GPS or tracker data, and tracks the arrival and leaving times
+of users and can be coordinated with several other <i>IdentityPresence</i>
+for detailed location data of people in a space. Another "context widget"
+is <i>Activity</i>, which uses ambient noise levels, video image processing,
+or computer activity levels to measure an overall activity level and changes
+in the activity level. Information from these widgets can be combined to
+determine higher levels of context awareness. For example, the <i>IdentityPresence</i>
+and the <i>Activity</i> widgets can be used to detect the occurrence of
+meetings.
+<p>The paper also addresses example applications developed with the Toolkit,
+and related work.
+<h3>
+Interesting Ideas/Questions</h3>
+
+<ul>
+<li>
+Extracting low level sensor data, and exposing higher level information
+to applications seems to be a critical component of ubicomp.</li>
+
+<li>
+(Not directly related to the paper...) One of the obvious information sources
+in audio, speech recognition, still has limited accuracy, especially in
+real-world (noisy) environments.</li>
+
+<li>
+The above begs the question: What information can be extracted and exposed
+from auditory sensors and processing?</li>
+
+<ul>
+<li>
+What can be done as far as Computational Perception?</li>
+
+<li>
+If the above is difficult to do, what limitations can simplify the problem
+(fixed set of voices to recognize, applications that do not rely on perfect
+speech recognition)?</li>
+
+<li>
+What meta-information can audio information provide that other sensory
+channels cannot?</li>
+
+<li>
+How can other context widgets work with an audio context widget to solve
+some of the ambiguity problems of speech recognition.</li>
+</ul>
+</ul>
+
+</body>
+</html>

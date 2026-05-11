@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    background-color: #F8FAF7;
+}
+
+#wrapper {
+}
+
+#wrapper img {
+    float: left;
+    padding: 2px 2px 2px 2px;
+    margin: 0 0 0 0;
+}
+
+#banner {
+    background-color: #494d51;
+    font-size: 1.2em;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: 80px;
+    border-bottom: 1px solid #ECFC38;
+    overflow: hidden;
+}
+
+#banner h1 {
+    font-size: 3.2em;
+    float: left;
+    color: #FFF;
+    margin-left: -5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 25px 0 0 0;
+}
+
+#navbar {
+    clear: both;
+    border-bottom: 1px solid #333333;
+    background-color: #90F33B;
+    margin: 0 0 0 0;
+    padding: 15px 0 0 0;
+}
+
+ul.nav {
+    clear: both;
+    list-style-type: none;
+    padding: 0px 0px 15px;
+    margin-left: 180px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul.nav li {
+    display: inline;
+}
+
+ul.nav a {
+    padding: 15px 15px 15px 15px;
+    margin-right: 1px;
+    text-decoration: none;
+    color: #333333;
+}
+
+ul.nav a:hover {
+    color: #ECFC38;
+}
+
+
+body#bio a#biolink,
+body#projects a#projectslink,
+body#resume a#resumelink,
+body#contact a#contactlink {
+    font-weight: bold;
+    color: black;
+}
+
+#contentwrapper {
+    background-color: #D1CBB5;
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    margin: 0 180px 0 180px;
+    background-color: #F8FAF7;
+    padding: 5px 20px 5px 20px;
+    border-left: 1px solid #C2BCA8;
+    border-right: 1px solid #C2BCA8;
+    min-width: 250px;
+}
+
+#content h1 {
+    margin: 0;
+    padding: 10px 5px 0px 5px;
+}
+
+#content a {
+    color: #3F8113;
+    text-decoration: none;
+}
+
+#content a:visited {
+    color: #707070;
+}
+
+#content a:hover {
+    color: #47B900;
+    text-decoration: underline;
+}
+
+#content table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #C2BCA8;
+}
+
+#content th {
+    text-align: right;
+    color: #333333;
+}
+
+#footer {
+    clear: both;
+    background-color: #181818;
+    margin: 0;
+}
+
+#footer p {
+    padding: 15px 0 15px 0px;
+    margin: 0 0 0 190px;
+}
+
+#footer a {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    color: #E2FE00;
+    text-decoration: none;
+}
+
+.projectbox {
+    clear: both;
+    border: 1px solid #C2BCA8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 0 8px 0 8px;
+    overflow: auto;
+}
+
+#content .projectbox .projimages {
+    clear: both;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .projectbox img {
+    border: 1px solid #C2BCA8;
+    margin: 0 2px 2px 0;
+}

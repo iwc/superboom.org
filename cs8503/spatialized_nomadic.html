@@ -1,0 +1,71 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Irwin Coleman III">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win98; I) [Netscape]">
+   <title>Summary: Design of Spatialized Audio in Nomadic Environments</title>
+</head>
+<body text="#FFFFFF" bgcolor="#000000" link="#FFFF00" vlink="#C0C0C0" alink="#C0FFC0">
+
+<h1>
+Summary: <u>Design of Spatialized Audio in Nomadic Environments</u></h1>
+Authors: <i>Nitin Sawhney, Chris Schmandt</i>
+<br>&nbsp;
+<h3>
+Goals</h3>
+The basic goals of the <i>Nomadic Radio</i> project are to provide an environment
+for the presentation of auditory information to users in a mobile wearable
+computing environment, and to provide a system of interaction for the user
+to examine and select from the various audio streams. Message retrieval
+and news updates were the primary problem domain of <i>Nomadic Radio</i>.
+<h3>
+The Spacialized Radio Metaphor</h3>
+The <i>Nomadic Radio</i> designers based the interaction paradigm on interaction
+techniques used with traditional radios. First, audio streams are <i>broadcast</i>
+to the user from some fixed location, where a computation environment of
+sufficient power can be housed. Second, the user may <i>browse</i> audio
+streams by selecting a message category, and using a forward/back navigation
+model to cycle through the audio streams in that category. Finally, the
+user may <i>scan</i> audio streams by previewing short segments of each
+audio stream. Each segment is faded in as the previous segment is faded
+out, providing more rapid access to the entire category of audio streams.
+<p>The primary tool used to focus the user's attention is audio spacialization.
+Spacialization cues are used to encode the arrival time of the audio stream
+and to indicate a selection by the user. Audio streams are spacialized
+so that the perceived sound sources lie within a planar orbit around the
+user's head. Each audio streams' orbital position corresponds to the location
+on a clock face of the arrival time of that audio stream. In other words,
+an audio stream that arrives at twelve o'clock would be spacialized straight
+ahead of the user's head, while a stream that arrived at nine o'clock would
+be spacialized directly to the left of the user's head. In the <i>scanning</i>
+operation, each audio segment is shifted from its orbital position to a
+center position, indicating that segment as the main focus of attention.
+The primary problem with the clock-oriented positioning is the overlap
+of audio streams that arrive in the AM, and others that arrive at the same
+hour, but in the PM. The two possible solutions to this ambiguity are an
+AM/PM indicator on each stream, or the use of a 24-hour clock. Each solution
+has its drawbacks, however.
+<h3>
+Implementation Environment</h3>
+A PC prototype exists for <i>Nomadic Radio</i>, but a more complete implementation
+also exists, using a wearable speaker array developed by <i>Nortel</i>
+and a wearable Intel PC. The RSX 3D libaries are used to provide a Java
+software implementation of the spacialization engine. UNIX workstations
+act as the collectors of information for broadcast, and a speech recognition
+API from AT&amp;T is used for user input.
+<h3>
+Other Interesting Items</h3>
+A concept discussed in this paper, but is not clearly involved in the <i>Nomadic
+Radio</i> project is the concept of combining spacialization with head
+tracking as a selection metaphor. An audio signal of interest can be easily
+focused upon by the user, simply be relying on the natural human inclination
+to turn towards a stimulus of interest. This concept is worthy of some
+further investigation.
+<p>
+<hr>
+<address>
+<a href="mailto:iwc@cc.gatech.edu">Irwin Coleman III</a></address>
+
+</body>
+</html>
