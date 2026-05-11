@@ -170,12 +170,31 @@ body#contact  a#contactlink {
   padding-right: 1.5rem;
 }
 
+/* ── Projects grid ─────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.projects-grid .projectbox:last-child:nth-child(odd) {
+  grid-column: span 2;
+}
+
 /* ── Project boxes ─────────────────────────── */
 .projectbox {
   border: 1px solid var(--border);
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
   padding: 1.25rem 1.5rem;
-  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.projectbox:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .projectbox h3 {
@@ -198,7 +217,8 @@ body#contact  a#contactlink {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
 }
 
 .projectimages a,
@@ -321,6 +341,14 @@ body#contact  a#contactlink {
   .nav { width: 100%; }
 
   .nav a { padding: 0.625rem 0.75rem 0.625rem 0; }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid .projectbox:last-child:nth-child(odd) {
+    grid-column: span 1;
+  }
 
   .lb-overlay { padding: 1rem; }
   .lb-close { top: 0.75rem; right: 1rem; font-size: 1.75rem; }
