@@ -185,6 +185,11 @@ body#contact  a#contactlink {
 
 .footer-contact a:hover { color: var(--accent); }
 
+.footer-copy {
+  color: #334155;
+  font-size: 0.75rem;
+}
+
 /* ── Back to top ───────────────────────────── */
 .back-to-top {
   text-align: right;
