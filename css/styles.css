@@ -32,7 +32,12 @@ body {
 
 /* ── Header / banner ───────────────────────── */
 #banner {
-  background: var(--hdr);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 2px solid var(--accent);
 }
 
@@ -206,6 +211,7 @@ body#contact  a#contactlink {
 /* ── Project boxes ─────────────────────────── */
 .projectbox {
   border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
   border-radius: 0.5rem;
   padding: 1.25rem 1.5rem;
   display: flex;
@@ -215,6 +221,7 @@ body#contact  a#contactlink {
 
 .projectbox:hover {
   border-color: #cbd5e1;
+  border-left-color: var(--accent);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
