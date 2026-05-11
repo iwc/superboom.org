@@ -39,40 +39,36 @@ body {
 .banner-inner {
   max-width: 920px;
   margin: 0 auto;
-  padding: 1.25rem 1.5rem;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #banner h1 {
   margin: 0;
+  padding: 1rem 0;
   font-size: 1.75rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: -0.02em;
-}
-
-body#bio #banner h1 {
-  font-size: 2.5rem;
+  white-space: nowrap;
 }
 
 /* ── Navigation ────────────────────────────── */
-#navbar {
-  background: var(--nav);
-}
-
 .nav {
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 0 1rem;
   list-style: none;
   display: flex;
   gap: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .nav li { display: block; }
 
 .nav a {
   display: block;
-  padding: 0.75rem 1rem;
+  padding: 1rem 0.875rem;
   color: #94a3b8;
   text-decoration: none;
   font-size: 0.9rem;
@@ -311,9 +307,20 @@ body#contact  a#contactlink {
     margin: 0 0 1rem;
   }
 
-  #banner h1 { font-size: 1.375rem; }
+  .banner-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.875rem 1.25rem 0;
+  }
 
-  .nav a { padding: 0.625rem 0.75rem; }
+  #banner h1 {
+    font-size: 1.375rem;
+    padding: 0 0 0.5rem;
+  }
+
+  .nav { width: 100%; }
+
+  .nav a { padding: 0.625rem 0.75rem 0.625rem 0; }
 
   .lb-overlay { padding: 1rem; }
   .lb-close { top: 0.75rem; right: 1rem; font-size: 1.75rem; }
