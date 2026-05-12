@@ -313,6 +313,8 @@ body#contact  a#contactlink {
 .projectimages img,
 .projimages img {
   display: block;
+  max-height: 130px;
+  width: auto;
   border: 1px solid var(--border);
   border-radius: 0.25rem;
   transition: border-color 0.15s, opacity 0.15s;
